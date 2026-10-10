@@ -1,0 +1,167 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*--------------------*/
+
+h1, h2, h3, h4, h5, h6, p{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+p{
+    font-size: 11px;
+    line-height: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 52px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+h1{
+    font-size: 21px;
+    line-height: 24px;
+    margin-top: 80px;
+    margin-bottom: 36px
+}
+
+h2{
+    font-size: 17px;
+    line-height: 19px;
+    margin-bottom: 28px;
+    margin-top: 12px
+}
+h3{
+    font-size: 15px;
+    line-height: 19px;
+    margin-bottom: 28px;
+    margin-top: 4px
+}
+
+.grey{
+    color: grey;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 52px;
+}
+
+.grey > a{
+    color: gray;
+}
+.grey > a:hover{
+    color: blue;
+}
+
+img{
+    display: block;
+    max-height: 200px;
+    margin-top: 38px;
+    margin-bottom: 10px;
+    margin: auto;
+}
+
+/* Оформление цитат */
+blockquote {
+    margin: 24px 200px;
+    padding: 18px 20px 18px 20px;
+    background: linear-gradient(180deg, rgba(15,23,42,0.02), rgba(15,23,42,0.01));
+    border-left: 6px solid #c7d2fe;
+    color: #374151;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.6;
+    position: relative;
+    border-radius: 6px;
+}
+
+blockquote::before {
+    content: "“";
+    font-size: 44px;
+    line-height: 1;
+    color: rgba(99,102,241,0.28);
+    position: absolute;
+    left: 12px;
+    top: 6px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+blockquote p { margin: 0; }
+
+q { quotes: "\201C" "\201D" "\2018" "\2019"; }
+q:before { content: open-quote; }
+q:after  { content: close-quote; }
+
+/* Стили для обычных списков */
+ol, ul {
+    margin: 0 200px 16px 200px; /* совпадает по горизонтали с заголовками/параграфами */
+    padding-left: 40px; /* отступ для маркера */
+    list-style-position: outside;
+    color: #374151;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+/* Вложенные списки */
+ul ul {
+    list-style-type: circle;
+    padding-left: 24px;
+}
+
+ol ol {
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
